@@ -8,7 +8,7 @@
 }
 
 .item{
-    background: pink;
+    background: rgb(45, 13, 228);
 }
 
 .container .item:nth-child(1){
