@@ -1,0 +1,38 @@
+.container{
+    display: grid;
+    width: 400px;
+    height: 400px;
+    background: papayawhip;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.item{
+    background: pink;
+}
+
+.container .item:nth-child(1){
+    /*Empieza en LÍNEA 1 del Grid y termina en la 2*/
+    grid-column: 1 / 2;
+}
+
+.container .item:nth-child(2){
+    /*Empieza en LÍNEA 2 del Grid y termina en la 3*/
+    grid-column: 2 / 3;
+     /*Empieza en LÍNEA 2 del Grid y termina en la 3*/
+    grid-row: 2 / 3;
+}
+
+.container .item:nth-child(3){
+     /*Empieza en LÍNEA 3 del Grid y termina en la 4*/
+    grid-column: 3 / 4;
+    /*Empieza en LÍNEA 3 del Grid y termina en la 4*/
+    grid-row: 3 / 4;
+}
+
+.container .item:nth-child(4){
+    /*Empieza en LÍNEA 4 del Grid y termina en la 5*/
+    grid-column: 4 / 5;
+    /*Empieza en LÍNEA 4 del Grid y termina en la 5*/
+    grid-row: 4 / 5;
+}
